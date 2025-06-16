@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+.filters{
+    font-size: small;
+}
+.badge:after{
+    content:attr(value);
+    font-size:15px;
+    background: white;
+    border-radius:50%;
+    border-color: crimson;
+    padding:5px;
+    position:relative;
+    left:-8px;
+    top:-10px;
+    opacity:0.9;
+    }
+    .fixed-header, .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        
+        padding: 10px 0;
+        color: #fff;
+        
+    }
+    .fixed-header{
+        top: 0;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }
+        

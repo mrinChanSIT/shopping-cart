@@ -1,0 +1,6 @@
+<div class="cart-item">
+    <span>{{cartUnit.productName}}</span> x <span>{{cartUnit.qty}}</span> : <strong >{{ (cartUnit.price * cartUnit.qty) | currency : 'INR'}}</strong>
+    
+    <span ><input type="submit" value="Delete" class="delbtn" (click) = "onclickDeleteItemfromCart()" ></span>
+    
+</div>

@@ -1,0 +1,10 @@
+.delbtn{
+    background: 0 0;
+    border: 0;
+    color: #0066C0;
+    cursor: pointer;
+    float: right;
+}
+.delbtn:hover{
+    text-decoration: underline;
+}

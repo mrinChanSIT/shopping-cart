@@ -1,0 +1,43 @@
+<p>FILTERS WORKS</p>
+<div class="card filters">
+
+    <div class="card-header">
+      <strong>Filter</strong>
+    </div>
+  
+    <div class="card-body">
+      <form>
+        <div class="form-group">
+          <label for="from">From</label>
+          <input type="number" id="from" class="form-control">
+        </div>
+  
+        <div class="form-group">
+          <label for="to">To</label>
+          <input type="number" id="to" class="form-control">
+        </div>
+  
+        <button class="btn btn-primary btn-block btn-sm">Filter by Price</button>
+      </form>
+      <hr>
+      <div class="row">
+        <div class="col">
+        <div class="dropdown menu">
+          <button (click)="myFunction()" class="btn btn-primary btn-block btn-sm">Select Category<i style="float: right;" class="arrow" ></i></button>
+          <div id = "dropbutton" class="dropdown-content">
+            <ul >
+              <li></li>
+              <a  [routerLink]="['/select-category/electronics']" ><li class="Cart" id="0" >Electronics</li></a>
+              <a  [routerLink]="['/select-category/lifestyle']" ><li class="Cart" id="1" >LifeStyle</li></a>
+              <a  [routerLink]="['/select-category/decoration']" ><li class="Cart" id="2" > Decoration</li> </a>
+              <a  [routerLink]="['/select-category/personalgrooming']" ><li class="Cart" id="3"  >Personal Grooming</li></a>
+              <a  [routerLink]="['/select-category/homeappliance']" ><li class="Cart" id="4" >Home Appliance</li></a>
+              
+            </ul>
+          </div>
+        </div>
+      </div> 
+    </div>
+    </div>
+  </div>
+  

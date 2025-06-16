@@ -1,0 +1,19 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 ">
+            <app-filters></app-filters>
+        </div>
+        <div class="col-md-7" >
+            <div class="row">
+            <div class="col-md-3" *ngFor="let product of productsList">
+                <app-homeappliance-item [pdtItem]="product" [addedtoWishList] = "wishlist.indexOf(product.id) >= 0"></app-homeappliance-item>
+              </div>
+            </div>
+        </div>
+       
+        <div class="col">
+            <app-cart></app-cart>
+        </div>
+    
+  </div>
+</div>

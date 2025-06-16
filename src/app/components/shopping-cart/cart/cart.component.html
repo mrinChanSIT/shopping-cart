@@ -1,0 +1,11 @@
+<p>CART WORKS</p>
+<div *ngIf = "cartItems.length === 0" class="alert alert-info">Your Cart is Empty</div>
+
+<ul *ngIf = "cartItems.length > 0" class="list-group">
+    <li class="list-group-item" *ngFor = "let c_Item of cartItems" >
+        <app-cart-item [cartUnit]="c_Item" (childevent)="deleteFromCart($event)"></app-cart-item>
+    </li>
+    <li class="list-group-item active" >
+        <strong >Bill :  </strong> {{cartTotal | currency: 'INR'}}
+    </li>
+</ul>
